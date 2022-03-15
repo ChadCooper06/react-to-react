@@ -11,6 +11,8 @@ import './index.css';
 import App from './App';
 import Ingredients from './routes/Ingredients';
 import Wizards from './routes/Wizards';
+import Houses from './routes/Houses';
+import Elixirs from './routes/Elixirs';
 
 const rootElement = document.getElementById("app"); // root element is in the index.html
 
