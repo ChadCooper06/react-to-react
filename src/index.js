@@ -11,6 +11,9 @@ import './index.css';
 import App from './App';
 import Ingredients from './routes/Ingredients';
 import Wizards from './routes/Wizards';
+import Houses from './routes/Houses';
+import Elixirs from './routes/Elixirs';
+import Characters from './routes/Characters';
 
 const rootElement = document.getElementById("app"); // root element is in the index.html
 
@@ -22,6 +25,7 @@ render(
         <Route path="houses" element={<Houses />} />
         <Route path="wizards" element={<Wizards />} />
         <Route path="ingredients" element={<Ingredients />} />
+        <Route path="characters" element={<Characters />} />
       </Route>
     </Routes>
   </BrowserRouter>,
