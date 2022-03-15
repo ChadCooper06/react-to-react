@@ -16,6 +16,7 @@ function App() {
         <Link to="/elixirs">Elixirs</Link> |{" "}
         <Link to="/ingredients">Ingredients</Link> |{" "}
         <Link to="/wizards">Wizards</Link> |{" "}
+        <Link to="/Characters">Characters</Link> |{" "}
       </nav>
       <Outlet />
     </div>
