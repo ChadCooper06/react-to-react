@@ -27,14 +27,14 @@ export default function Houses() {
     <main style={{ padding: "1rem 0" }} className="container">
       <div className="row justify-content-center text-center gap-2">
         <h2>Houses</h2>
-        {housesList.map((houses, idx) => <Houses key={houses.id} idx={idx} houses={houses} />)}
+        {housesList.map((houses) => <Houses key={houses.id} houses={houses} />)}
       </div>
     </main>
   );
 }
 
 
-const House = ({ idx, house }) => {
+const House = ({ house }) => {
   return (
     <div className='card col-5 p-3'>
       <h2>{house.id}</h2>
