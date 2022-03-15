@@ -27,7 +27,7 @@ export default function Houses() {
     <main style={{ padding: "1rem 0" }} className="container">
       <div className="row justify-content-center text-center gap-2">
         <h2>Houses</h2>
-        {housesList.map((houses) => <Houses key={houses.id} houses={houses} />)}
+        {housesList}
       </div>
     </main>
   );
@@ -37,7 +37,7 @@ export default function Houses() {
 const House = ({ house }) => {
   return (
     <div className='card col-5 p-3'>
-      <h2>{house.id}</h2>
+      <h2>{house.name}</h2>
       <div>Colors: {house.houseColours}</div>
       <div>Founder: {house.founder}</div>
       <div>Animal: {house.animal}</div>
