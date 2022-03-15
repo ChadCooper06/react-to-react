@@ -19,22 +19,22 @@ export default function Houses() {
     }
   }, []);
 
-  let housesList = houses.map((house) => {
-    return <House house={house} />;
-  });
+   let housesList = houses.map((house) => {
+     return <House house={house} />;
+   });
 
   return (
     <main style={{ padding: "1rem 0" }} className="container">
       <div className="row justify-content-center text-center gap-2">
         <h2>Houses</h2>
-        {housesList}
+        {housesList.map((houses, idx) => <Houses key={houses.id} idx={idx} houses={houses} />)}
       </div>
     </main>
   );
 }
 
 
-const House = ({ house }) => {
+const House = ({ idx, house }) => {
   return (
     <div className='card col-5 p-3'>
       <h2>{house.id}</h2>

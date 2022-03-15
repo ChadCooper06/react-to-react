@@ -23,7 +23,7 @@ export default function Elixirs() {
     <main style={{ padding: "1rem 0" }} className="container">
       <div className="row text-center justify-content-center gap-2">
         <h2>Elixirs</h2>
-        {elixirs.map((elixir) => <Elixir key={elixir.id} elixir={elixir} />)}
+        {elixirs.map((elixir, idx) => <Elixir key={elixir.id} idx={idx} elixir={elixir} />)}
       </div>
     </main>
   );
